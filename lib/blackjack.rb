@@ -47,7 +47,7 @@ def hit?(initial_round)
      card_grand_total = initial_round + new_card
      
   elsif user_input == "s"
-     card_grand_total
+     initial_round
   end
   
   card_grand_total
