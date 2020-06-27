@@ -69,7 +69,7 @@ def runner
 
   until current_card_total > 21 do
     
-    hit?
+    hit?(current_card_total)
     puts current_card_total
   end
 
