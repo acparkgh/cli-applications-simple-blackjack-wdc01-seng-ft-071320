@@ -67,9 +67,9 @@ def runner
   current_card_total = initial_round
   puts current_card_total
 
-  until card_total > 21 do
+  until current_card_total > 21 do
     
-    hit?(current_card_total)
+    hit?(initial_round)
     puts current_card_total
     puts card_total
   end
