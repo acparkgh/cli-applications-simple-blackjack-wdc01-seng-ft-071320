@@ -48,7 +48,7 @@ def hit?(current_card_total)
       invalid_command
       hit?(current_card_total)
     end  
-  current_card_total
+  #current_card_total
 end
 
 def invalid_command
