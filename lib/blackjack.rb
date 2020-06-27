@@ -50,7 +50,6 @@ def hit?(initial_round)
       hit?(initial_round)
     end  
   card_grand_total
-  
 end
 
 def invalid_command
