@@ -48,7 +48,7 @@ def hit?(initial_round)
       card_grand_total = initial_round
     elsif user_input != "h" || user_input !="s"
       invalid_command
-      prompt_user
+      hit?(initial_round)
     end  
   card_grand_total
   
