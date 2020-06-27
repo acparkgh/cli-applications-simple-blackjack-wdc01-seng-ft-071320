@@ -47,7 +47,7 @@ def hit?(current_card_total)
       card_total = current_card_total
     elsif user_input != "h" || user_input !="s"
       invalid_command
-      hit?(initial_round)
+      hit?(current_card_total)
     end  
   card_total
 end
