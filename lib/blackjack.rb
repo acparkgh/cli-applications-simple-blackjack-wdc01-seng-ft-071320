@@ -41,10 +41,12 @@ def hit?(initial_round)
   prompt_user
   get_user_input
   
-  if get_user_input != "s" || get_user_input != "h"
-    invalid_command
-    hit?(initial_round)
+  if get_user_input == "h"
+     
   end
+  
+  
+  
 end
 
 def invalid_command
