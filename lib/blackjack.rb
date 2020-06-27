@@ -38,15 +38,15 @@ end
 
 def hit?(initial_round)
   # code hit? here
-  current_total = initial_round
+  card_total = 0
   prompt_user
   get_user_input
   
   if get_user_input == "h"
-     current_total = current_total + deal_card
+     card_total = initial_round + deal_card
   end
   
-  current_total
+  card_total
   
 end
 
