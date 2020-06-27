@@ -40,9 +40,9 @@ def hit?(initial_round)
   # code hit? here
   card_total = 0
   prompt_user
-  get_user_input
+  user_input = get_user_input
   
-  if get_user_input == 'h'
+  if user_input == 'h'
      card_total = initial_round + deal_card
   end
   
