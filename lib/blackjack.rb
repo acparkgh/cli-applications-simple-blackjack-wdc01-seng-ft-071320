@@ -38,12 +38,13 @@ end
 
 def hit?(current_card_total)
   # code hit? here
+  card_total = 0
   prompt_user
   user_input = get_user_input
     if user_input == "h"
-      current_card_total += deal_card
+      card_total += deal_card
     elsif user_input == "s"
-      current_card_total
+      card_total = current_card_total
     elsif user_input != "h" || user_input !="s"
       invalid_command
       hit?(current_card_total)
@@ -67,7 +68,7 @@ def runner
   current_card_total = initial_round
   puts current_card_total
 
-  until current_card_total > 21 do
+  until card_total > 21 do
     
     hit?(current_card_total)
     puts current_card_total
