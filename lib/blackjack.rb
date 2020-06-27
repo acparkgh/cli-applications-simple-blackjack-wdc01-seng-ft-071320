@@ -38,18 +38,18 @@ end
 
 def hit?(initial_round)
   # code hit? here
-  card_grand_total = 0
+  card_total = 0
   prompt_user
   user_input = get_user_input
     if user_input == "h"
-      card_grand_total = initial_round + deal_card
+      card_total = initial_round + deal_card
     elsif user_input == "s"
-      card_grand_total = initial_round
+      card_total = initial_round
     elsif user_input != "h" || user_input !="s"
       invalid_command
       hit?(initial_round)
     end  
-  card_grand_total
+  card_total
 end
 
 def invalid_command
