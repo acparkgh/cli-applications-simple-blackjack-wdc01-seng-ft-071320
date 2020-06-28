@@ -70,7 +70,7 @@ def runner
   until current_card_total > 21 do
     
     current_card_total = hit?(current_card_total)
-    
+    display_card_total(current_card_total)
   
 
   end
