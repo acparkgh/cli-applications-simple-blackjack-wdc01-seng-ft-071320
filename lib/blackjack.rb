@@ -49,7 +49,7 @@ def hit?(current_card_total)
       invalid_command
       hit?(current_card_total)
     end  
-    p current_card_total
+    puts "CurrentCardTotal: #{current_card_total}"
 end
 
 def invalid_command
