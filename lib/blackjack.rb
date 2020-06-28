@@ -65,13 +65,13 @@ def runner
   welcome
 
   current_card_total = initial_round
-  puts current_card_total
+  
 
   until current_card_total > 21 do
     
     current_card_total = hit?(current_card_total)
     
-    puts current_card_total
+  
 
   end
 
